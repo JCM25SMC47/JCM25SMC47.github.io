@@ -4,7 +4,7 @@ document.querySelector('.bouton-de-menu').addEventListener('click',()=>{
 });
 
 ScrollReveal().reveal('.vitrine');
-ScrollReveal().reveal('.CartesDactualites',{delay:500});
-ScrollReveal().reveal('.Banniere-cartes-une',{delay:500});
-ScrollReveal().reveal('.Banniere-cartes-deux',{delay:500});
+ScrollReveal().reveal('.CartesDactualites',{delay:200});
+ScrollReveal().reveal('.Banniere-cartes-une',{delay:200});
+ScrollReveal().reveal('.Banniere-cartes-deux',{delay:200});
 
