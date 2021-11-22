@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #181F1C;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23e31720' fill-opacity='0.2'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    color: #F0FFF1;
+    
+}
+
+a{
+    color:#F0FFF1;
+    text-decoration: None;
+}
+
+ul{
+    list-style: none;
+}
+
+.conteneur{
+    width:90%;
+    margin:auto;
+}
+
+/*Navigation*/
+
+.principal{
+    font-size: 14px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 40px 0;
+}
+
+.marq-nav{
+    width:50px;
+}
+
+/*Navigation à gauche*/
+.principal ul {
+    display:flex;
+}
+
+.principal ul li {
+    padding:10px;
+}
+
+.principal ul li a {
+    padding: 2px;
+}
+
+.principal ul li a:hover {
+    border-bottom: 2px solid #F0FFF1;
+}
+
+.principal ul.nav-menu {
+    flex:1;
+    margin-left:20px;
+}
+
+.bouton-de-menu {
+    position:absolute;
+    cursor:pointer;
+    top:10px;
+    right:10px;
+    z-index:2;
+    display:none;
+}
+
+/*VITRINE*/
+
+.btn{
+    cursor:pointer;
+    display:inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #131515;
+    color:#FFFAFB;
+    font-style: 15px;
+    border: 1px solid #FFFAFB;
+    margin:10px 0;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+.vitrine{
+    width:100%;
+    height:550px;
+    background:url('./Images/vitrine_01.jpg') no-repeat center center/cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding:50px;
+    margin-bottom: 20px;
+    color:aliceblue
+}
+
+
+
+.vitrine h2, .vitrine p{
+    margin-bottom:10px;
+}
+
+.vitrine.btn{
+    margin-top: 20px;
+}
+
+/*CARTES D'ACTUALITÉS*/
+
+.CartesDactualites {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+    margin:10px 0;
+}
+
+.CartesDactualites img {
+    width: 100%;
+    height:180px;
+}
+
+.CartesDactualites h3{
+    font-size:18px;
+    margin:9px 0;
+    justify-content: first baseline;
+}
+
+.CartesDactualites a{
+    padding: 10px 0;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.CartesDactualites a {
+    padding: 10px 0;
+    color: #F2F2F2;
+    text-transform:uppercase;
+    display:inline-block;
+    font-weight: bold;
+}
+
+.CartesDactualites a:hover {
+    text-decoration:underline;
+}
+
+/*BANNIÈRE DE CARTES UNE*/
+
+.Banniere-cartes-une {
+    width:100%;
+    height:350px;
+    background: url('./Images/Banner1.jpg') no-repeat center center/cover;
+    margin-bottom:48px;
+    
+}
+
+.Banniere-cartes-une .contenu {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color:#FFFAFB;
+}
+
+.Banniere-cartes-une .contenu p, .Banniere-cartes-une .contenu h2, .Banniere-cartes-une .contenu a {
+    margin: 10px 0 20px 0;
+}
+
+
+
+/*BANNIÈRE DE CARTES DEUX*/
+
+.Banniere-cartes-deux {
+    width:100%;
+    height: 350px;
+    background: url('./Images/Banner2.jpg') no-repeat center center/cover;
+    margin-bottom: 48px;
+}
+
+.Banniere-cartes-deux .contenu {
+    width: 40%;
+    padding: 20px 0 0 30px;
+    color:#FFFAFB;
+}
+
+.Banniere-cartes-deux .contenu p, .Banniere-cartes-deux .contenu h2, .Banniere-cartes-deux .contenu a {
+    margin: 10px 0 20px 0;
+}
+
+
+/*SOCIAL*/
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+.liens {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.liens a {
+    margin:0 30px;
+}
+
+.liens a i {
+    font-size: 3rem;
+}
+
+/*LIENS EN PIED DE PAGE*/
+
+.Liens-en-pied-de-page {
+    background: #2F3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.Conteneur-de-pied-de-page {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Conteneur-de-pied-de-page ul {
+    margin: 0 auto;
+}
+
+.Conteneur-de-pied-de-page ul li {
+line-height: 2.8;}
+
+
+.Pied-de-page {
+    background: #2F3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:700px) {
+
+    .bouton-de-menu {
+        display:block;
+    }
+
+    .principal ul.nav-menu {
+        display:block;
+        position: absolute;
+        top:0;
+        left:0;
+        background: #2F3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform:translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .principal ul.nav-menu.show{
+        transform:translateX(-20px);
+    }
+
+    .principal ul.nav-menu li {
+        padding:20px;
+       font-size:14px ;
+    }
+
+    .principal ul.nav-menu-droit {
+        margin-right: 40px;
+    }
+
+    .CartesDactualites {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .Banniere-cartes-une .contenu, .Banniere-cartes-deux .contenu {
+        width: 50%;
+         padding: 30px 0 0 30px;
+         color:#FFFAFB;
+    
+    }
+
+    .Banniere-cartes-une .contenu p, .Banniere-cartes-une .contenu h2{
+        padding: 10px 0 10px 10px;
+    }
+
+    .Banniere-cartes-une .contenu a{
+        margin: 10px 0 20px 0;
+    }
+
+    .Banniere-cartes-deux .contenu p, .Banniere-cartes-deux .contenu h2{
+        padding: 10px 0 10px 10px;
+    }
+
+    .Banniere-cartes-deux .contenu a{
+        margin: 10px 0 20px 0;
+    }
+
+    .Liens-en-pied-de-page .Conteneur-de-pied-de-page {
+        grid-template-columns: repeat(2,1fr) ;}
+
+}
+
+
+@media (max-width:500px){
+
+    
+    .bouton-de-menu {
+        display:block;
+    }
+
+    
+    .CartesDactualites {
+        grid-template-columns: 1fr;
+
+    }
+
+    .CartesDactualites img {
+        height:270px;
+    
+    }
+
+    .Banniere-cartes-une .contenu, 
+    .Banniere-cartes-deux .contenu
+     {
+        width:100%;
+        padding:20px 20px;
+    }
+
+    .Liens-en-pied-de-page .Conteneur-de-pied-de-page {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+        
+      
+    
