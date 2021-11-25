@@ -3,6 +3,11 @@ document.querySelector('.bouton-de-menu').addEventListener('click',()=>{
 
 });
 
+document.querySelector('.icone_recherche').addEventListener('click',()=>{
+    document.querySelector('input').classList.toggle('show');
+});
+
+
 ScrollReveal().reveal('.vitrine');
 ScrollReveal().reveal('.CartesDactualites',{delay:200});
 ScrollReveal().reveal('.Banniere-cartes-une',{delay:200});

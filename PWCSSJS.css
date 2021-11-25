@@ -34,8 +34,9 @@ ul{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 30px;
     padding: 40px 0;
+    margin-top:10px;
 }
 
 .marq-nav{
@@ -68,7 +69,7 @@ ul{
     position:absolute;
     cursor:pointer;
     top:10px;
-    right:10px;
+    right:20px;
     z-index:2;
     display:none;
 }
@@ -94,6 +95,25 @@ ul{
 
 hr{
     margin: 10px 0;
+}
+
+.nav-menu-droit input {
+    position:absolute;
+    top:10px;
+    right:50px;
+    z-index:2;
+    
+    
+}
+
+.icone_recherche{
+    cursor:pointer;
+    position:absolute;
+    top:8px;
+    right:20px;
+    z-index:2;
+
+    
 }
 
 .vitrine{
@@ -269,6 +289,23 @@ line-height: 2.8;}
     .bouton-de-menu {
         display:block;
     }
+    .icone_recherche{
+        cursor:pointer;
+        position:absolute;
+        top:50px;
+        right:10px;
+        z-index:2;
+        
+    }
+
+    .nav-menu-droit input {
+        display:block;
+        position:absolute;
+        top:10px;
+        right:50px;  
+        transform: translateY(10px);
+        transition:transform .5s ease-in-out;
+    }
 
     .principal ul.nav-menu {
         display:block;
@@ -336,6 +373,24 @@ line-height: 2.8;}
         display:block;
     }
 
+    .icone_recherche{
+        cursor:pointer;
+        position:absolute;
+        top:50px;
+        right:10px;
+        z-index:2;
+        
+    }
+
+    .nav-menu-droit input {
+        position:absolute;
+        top:50px;
+        right:50px;
+        z-index:2;
+        display:block;
+        
+        
+    }
     
     .CartesDactualites {
         grid-template-columns: 1fr;
